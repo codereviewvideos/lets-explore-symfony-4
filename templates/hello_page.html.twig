@@ -3,5 +3,8 @@
 {% block title %}Custom Title{% endblock %}
 
 {% block main %}
-    Hello, CodeReviewVideos!
+
+    {#{{ dump() }}#}
+
+    Hello, {{ app.request.query.get('name') | default('CodeReviewVideos') }}!
 {% endblock %}
