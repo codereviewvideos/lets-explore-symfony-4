@@ -4,7 +4,8 @@
 
 {% block main %}
 
-    {#{{ dump() }}#}
+    <div>
+        <p>Hello, {{ name }}!</p>
+    </div>
 
-    Hello, {{ app.request.query.get('name') | default('CodeReviewVideos') }}!
 {% endblock %}
